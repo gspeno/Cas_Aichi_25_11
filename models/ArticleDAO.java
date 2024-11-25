@@ -24,6 +24,7 @@ public class ArticleDAO {
                 article.setDesignation(rs.getString("designation"));
                 article.setQuantite(rs.getInt("quantite"));
                 article.setPrixUnitaire(rs.getFloat("prixUnitaire"));
+                articles.add(article);
             }
         } catch (SQLException e) {
             e.printStackTrace();
